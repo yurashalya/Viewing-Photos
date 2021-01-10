@@ -1,0 +1,21 @@
+.header {
+    padding: 15px;
+
+    .linkLogo {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            max-width: calc(45px + 2vmin);
+        }
+    
+        .headerTitle {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: calc(10px + 2vmin);          
+            background: linear-gradient(254deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+            -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
+        }
+    }
+}

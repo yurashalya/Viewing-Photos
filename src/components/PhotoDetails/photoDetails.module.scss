@@ -1,0 +1,90 @@
+.modalContent {
+    position: relative;
+    width: 100%;
+
+    .details {
+        position: absolute;
+        top: 3%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: default;
+
+
+        .author,
+        .camera {
+            display: flex;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+            background-color: rgba(34, 34, 34, 0.5);
+            border-radius: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+
+            .title {
+                margin-right: 10px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .tags {
+        position: absolute;
+        display: flex;
+        bottom: 5%;
+        color: white;
+        width: 60%;
+        padding-left: 20px;
+        p:first-child {
+            margin-right: 5px;
+        }
+
+        p:last-child {
+            span {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .controlBtn {
+        position: absolute;
+        top: 50%;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    .controlBtnLeft {
+        left: 2%;
+    }
+
+    .controlBtnRight {
+        right: 2%;
+    }
+}
+
+.animationBlur {
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 10;
+    animation-name: controllAmination;
+    position: absolute;
+    top: 0%;
+    animation-duration: .5s;
+}
+
+@keyframes controllAmination {
+    from {background: black;}
+    to {background: inherit; z-index: -1;}
+  }
