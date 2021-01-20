@@ -23,7 +23,7 @@ const App = () => {
 
   useEffect(() => {
     getImages(countPage).then((res) => {
-      if (res.pictures) {
+      if (res.pictures.length > 0) {
         setImagesData([...imagesData, ...res.pictures]);
       }
     });
@@ -60,6 +60,7 @@ const App = () => {
       getPhotoDetails(prevId.id).then((res) => {
         setPhotoDetails([{ ...res }]);
       });
+      setPrevBtnDisabled(false);
     }
   };
 
